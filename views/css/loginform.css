@@ -1,0 +1,73 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    max-width: 90%;
+}
+
+.panel-heading {
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.panel-title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="submit"]:hover {
+    background-color: #717070;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; 
+}

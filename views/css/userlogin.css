@@ -1,0 +1,81 @@
+#loginPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    z-index: 1000;
+}
+
+/* Close button style */
+#loginPopup .closeBtn {
+    font-size: 24px;
+    color: #555;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#loginPopup .closeBtn:hover {
+    color: #333;
+}
+
+#loginPopup input[type="text"],
+#loginPopup input[type="password"],
+#loginPopup button {
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: calc(100% - 24px);
+}
+
+#loginPopup button {
+    width: 100%;
+}
+
+#loginPopup button {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginPopup button:hover {
+    background-color: #f36b2a;
+}
+
+#loginPopup input[type="text"]:focus,
+#loginPopup input[type="password"]:focus,
+#loginPopup button:focus {
+    outline: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    z-index: 1000;
+}
+

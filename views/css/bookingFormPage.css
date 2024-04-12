@@ -1,0 +1,221 @@
+body {
+  background-image:url(../images/bookingBack.jpg);
+  background-size: cover; 
+ 
+}
+
+
+#bookingForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px; /* Increased width */
+    max-width: 90%; /* Adjusted maximum width */
+    z-index: 1000;
+  }
+  
+  /* Close button style */
+  #bookingForm .close {
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  #bookingForm .close:hover {
+    color: #333;
+  }
+  
+  #bookingForm input[type="text"],
+  #bookingForm input[type="email"],
+  #bookingForm input[type="date"],
+  #bookingForm input[type="time"],
+  #bookingForm select,
+  #bookingForm button {
+    font-size: 14px; /* Increased font size */
+    padding: 10px; /* Increased padding */
+    margin-bottom: 10px; /* Adjusted margin */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    width: calc(100% - 24px); /* Adjusted width */
+  }
+  
+  #bookingForm select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='18px' height='18px'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+    padding-right: 28px;
+  }
+  
+  #bookingForm input[type="date"],
+  #bookingForm input[type="time"],
+  #bookingForm select,
+  #bookingForm button {
+    width: 100%; /* Adjusted width for date, time, select, and button */
+  }
+  
+  /* Button style */
+  #bookingForm button {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #bookingForm button:hover {
+    background-color: #000000;
+  }
+  
+  /* Focus styles */
+  #bookingForm input[type="text"]:focus,
+  #bookingForm input[type="email"]:focus,
+  #bookingForm input[type="date"]:focus,
+  #bookingForm input[type="time"]:focus,
+  #bookingForm select:focus,
+  #bookingForm button:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Button style */
+  #bookingForm button {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #bookingForm button:hover {
+    background-color: #f36b2a;
+  }
+  
+  /* Focus styles */
+  #bookingForm input[type="text"]:focus,
+  #bookingForm input[type="email"]:focus,
+  #bookingForm button:focus {
+    outline: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+#booknow {
+    border-radius: 50px;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#booknow #leftBookNow {
+    width: 70%;
+    background-color: #f36b2a;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#booknow #right {
+    width: 30%;
+    background-color: #ffffff;
+    height: 50px;
+    border-radius: 0 50px 50px 0;
+    color: black;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#booknow:hover {
+    cursor: pointer;
+}
+
+#booknow #leftBookNow:hover {
+    background-color: #f36b2a;
+    color: rgb(255, 255, 255);
+}
+
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
+
+/* Your existing styles... */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 576px) {
+  /* Styles for extra small devices (phones) */
+  #bookingForm {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 100%; /* Adjusted maximum width */
+    padding: 20px; /* Adjusted padding */
+  }
+
+  /* Other styles for extra small devices */
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* Styles for small devices (tablets) */
+  #bookingForm {
+    width: 80%; /* Adjusted width for small screens */
+    max-width: 90%; /* Adjusted maximum width */
+    padding: 25px; /* Adjusted padding */
+  }
+
+  /* Other styles for small devices */
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* Styles for medium-sized devices (small laptops) */
+  #bookingForm {
+    width: 70%; /* Adjusted width for medium screens */
+    max-width: 80%; /* Adjusted maximum width */
+    padding: 30px; /* Adjusted padding */
+  }
+
+  /* Other styles for medium-sized devices */
+}
+
+/* You can add more media queries for larger screens if needed */
+
+@media screen and (min-width: 993px) {
+  /* Styles for large devices (desktops) */
+  #bookingForm {
+    width: 60%; /* Adjusted width for larger screens */
+    max-width: 70%; /* Adjusted maximum width */
+    padding: 35px; /* Adjusted padding */
+  }
+
+  /* Other styles for large devices */
+}

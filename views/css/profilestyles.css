@@ -1,0 +1,253 @@
+/* Updated styles for a modern look */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Increased shadow effect */
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect when focused */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Updated styles for avatar and buttons */
+
+/* ... Previous CSS ... */
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .save-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #717070;
+  }
+  
+
+  .back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  .back-btn:hover {
+    background-color: #555;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 300px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .update-status-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .update-btn {
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-btn:hover {
+    background-color: #2d2727;
+  }
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .back-btn {
+    display: block; /* Show the back button */
+  }
+
+  .user-details {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .user-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .save-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Additional styles for smaller screens */
+}
+
+/* Tablet and larger screens */
+@media screen and (min-width: 768px) {
+  .back-btn {
+    display: none; /* Hide the back button */
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  /* Other styles for larger screens */
+}
+
+/* Desktop screens */
+@media screen and (min-width: 992px) {
+  /* Additional styles for larger screens */
+}
